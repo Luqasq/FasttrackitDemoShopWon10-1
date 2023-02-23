@@ -84,6 +84,7 @@ public class Modal {
     public void clickOnTheLoginButton() {
         System.out.println("Clicked on the : " + this.loginButton);
         this.loginButton.click();
+        sleep(200);
     }
 
     /**

@@ -156,7 +156,11 @@ public class HomePage extends Page {
         public void logUserOut() {
             this.header.clickOnTheCloseModalButton();
         }
+
+    public void returnToHomePage() {
+        this.header.getLogoIcon().click();
     }
+}
 
 
 
