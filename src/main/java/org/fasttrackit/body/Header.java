@@ -10,8 +10,8 @@ public class Header {
     private final SelenideElement cartIcon = $("[href='#/cart']");
     private final SelenideElement wishListIcon = $("[href='#/wishlist']");
     private final SelenideElement greetingsMessage = $(".navbar-text span span");
-    private final SelenideElement openModalButton = $(".fa-sign-in-alt");
-    private final SelenideElement closeModalButton = $(".fa-sign-out-alt");
+    private final SelenideElement signInButton = $(".fa-sign-in-alt");
+    private final SelenideElement signOutButton = $(".fa-sign-out-alt");
 
 
     public Header() {
@@ -39,16 +39,16 @@ public class Header {
         return greetingsMessage.text();
     }
 
-    public SelenideElement getOpenModalButton() {
-        return openModalButton;
+    public SelenideElement getSignInButton() {
+        return signInButton;
     }
 
     /**
      * Actions
      */
 
-    public void clickOnTheOpenModalButton() {
-        this.openModalButton.click();
+    public void clickOnTheSignInButton() {
+        this.signInButton.click();
     }
 
 
@@ -67,8 +67,8 @@ public class Header {
         this.cartIcon.click();
     }
 
-    public void clickOnTheCloseModalButton() {
-        this.closeModalButton.click();
+    public void clickOnTheSignOutButton() {
+        this.signOutButton.click();
     }
 }
 

@@ -1,12 +1,13 @@
 package org.fastrackit.components;
 
+import io.qameta.allure.Feature;
 import org.fasttrackit.pages.CartPage;
 import org.fasttrackit.pages.HomePage;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
-
+@Feature("Cart Components Tests")
 public class CartPageComponentsTest {
 
     HomePage homePage = new HomePage();

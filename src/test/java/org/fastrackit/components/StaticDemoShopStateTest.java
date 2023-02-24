@@ -46,7 +46,7 @@ public class StaticDemoShopStateTest {
 
     @Test
     public void verifyDemoShopHeaderContainsLoginButton() {
-        SelenideElement loginButton = homePage.getHeader().getOpenModalButton();
+        SelenideElement loginButton = homePage.getHeader().getSignInButton();
         assertTrue(loginButton.exists(), "Expected Login Button to exist on Page.");
         assertTrue(loginButton.isDisplayed(), "Expected Login Button to be displayed.");
     }

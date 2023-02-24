@@ -25,6 +25,10 @@ public class Footer {
 
         return resetIcon;
     }
+
+    public void clickOnResetIcon() {
+        this.resetIcon.click();
+    }
 }
 
 

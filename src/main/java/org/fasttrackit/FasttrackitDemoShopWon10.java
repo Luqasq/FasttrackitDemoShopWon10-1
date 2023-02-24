@@ -72,7 +72,7 @@ public class FasttrackitDemoShopWon10 {
     }
 
     private static void verifyLoginModal(HomePage homePage) {
-        homePage.clickOnTheOpenModalButton();
+        homePage.clickOnTheSignInButton();
         homePage.validateModalIsDisplayed();
         Modal modal = new Modal();
         modal.getModalTitle();
@@ -104,7 +104,7 @@ public class FasttrackitDemoShopWon10 {
     }
 
     private static void loginWithUser(HomePage homePage, String beetleUser) { Modal modal;
-        homePage.clickOnTheOpenModalButton();
+        homePage.clickOnTheSignInButton();
         modal = new Modal();
         modal.clickOnUserNameField();
         modal.typeInUserNameField(beetleUser);
